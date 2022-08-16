@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Utilizator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('#b1').click(function() {
+                $('#p1').text('Numele: ' + $('#in1').val());
+                $('#p2').text('Prenumele: ' + $('#in2').val());
+                $('#p3').text('Data nasterii: ' + $('#in3').val());
+                $('#p4').text('Adresa de Email: ' + $('#in6').val());
+                alert('Datele au fost salvate cu succes!')
+            });
+
+            $('#b9').click(function() {
+                $('#img1').attr("src", $('#in0').val());
+            });
+
+            $('#p5').click(function() {
+                $(this).text('Astazi este: ' + Date());
+            });
+
+            $("input").focus(function() {
+                $(this).css("background", "#f1f1f1");
+            });
+
+            $('#b22').click(function() {
+                window.location.href = ("signin.html");
+                alert("Esti sigur ca renunti la modificari?")
+            });
+        });
+    </script>
+    <style>
+        div {
+            text-align: center;
+            margin: auto;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        body {
+            background: url(https://i2.wp.com/files.123freevectors.com/wp-content/original/157857-abstract-white-and-gold-background.jpg?w=420);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <h6 class="text-dark" style="margin-left: 50px; text-align: left;">Contact :
+                    <a href="tel:0765896655" class="text text-dark text-align=left">0765896655 /</a>
+                    <a href="https://mail.google.com/" class="text text-dark" target="_blank">ali.iordache@gmail.com</a>
+                </h6>
+            </div>
+            <div class="col">
+                <h5 class="transport" style="font-style: oblique; text-align: left;">Transport gratuit pentru comenzi peste 150 ron!</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header" style="margin:20px; width:auto; height:80px">
+        <div class="row">
+            <div class="col-3 ">
+                <a href="index.html"><img src="https://albinalucratoare.ro/wp-content/uploads/logo-shop-albina-lucratoare.png" width="270" height="60"></a>
+            </div>
+            <div class="col-5 ">
+                <div class="form-group search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Cauta...">
+                </div>
+            </div>
+            <div class="col ">
+                <a href="signup.html">
+                    <button class="signup" type="signup ">Cont nou</button>
+                </a>
+                <a href="signin.html ">
+                    <button class="signin" type="signin ">Intra in cont</button>
+                </a>
+                <a href="utilizator.html ">
+                    <button class="utilizator" type="signin ">Utilizator</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BARA DE NAVIGARE-->
+    <div class="navbar navbar-expand-lg text-light">
+        <div class="collapse navbar-collapse " id="navbars">
+            <ul class="nav nav-tabs nav-justified ">
+                <li class="active"><button class="acasa"><a href="index.html" class="btn-lg text-light" value="Home" />Acasa</a></button>
+                </li>
+                <li>
+                    <div class="dropdown text-light">
+                        <button onclick="myFunction()" class="dropbtn text-light">Produse apicole</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="propolis.html" style="text-align: left;">Propolis</a>
+                            <a href="polen.html" style="text-align: left;">Polen</a>
+                            <a href="miere.html" style="text-align: left;">Miere romaneasca</a>
+                            <a href="laptisor.html" style="text-align: left;">Laptisor de matca</a>
+                        </div>
+                    </div>
+                </li>
+                <li><button class="noi"><a href="noi.html" class="btn-lg text-light" value="despre" />Despre noi</a></button>
+                </li>
+                <li><button class="contact"><a href="contact.html" class="btn-lg text-light" value="contact" />Contact</a></button>
+                </li>
+                <li><button class="blog"><a href="blog.html " class="btn-lg text-light" value="blog" />Blog</a></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row" style="color: #05386b;">
+            <div class="col-2"></div>
+            <div class="col-3">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="img img-fluid" id="img1">
+                </br>
+                <button id="b9" class="btn btn-default" style="color: #05386b;">Incarca imaginea</button>
+            </div>
+            <div class="col-5">
+                <p id="p1">Nume</p>
+                <p id="p2">Prenume</p>
+                <p id="p3">Data nasterii</p>
+                <p id="p4">Adresa de e-mail</p>
+                <p id="p5">Data curenta</p>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <form class="form-horizontal" style="color: #05386b;">
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="poza">Poza de profil:</label>
+                <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                    <input type="text" class="form-control" id="in0" placeholder="link imagine" name="poza">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Nume:</label>
+                <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                    <input type="text" class="form-control" id="in1" placeholder="Scrie numele" name="name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="surname">Prenume:</label>
+                <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                    <input type="text" class="form-control" id="in2" placeholder="Scrie prenumele" name="surname">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="date">Data nasterii:</label>
+                <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                    <input type="date" class="form-control" id="in3" placeholder="Scrie data nasterii" name="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <p>
+                        Genul:
+                    </p>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sex" id="in4" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Masculin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sex" id="in5" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Feminin</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">E-mail:</label>
+                <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                    <input type="email" class="form-control" id="in6" placeholder="Scrie adresa de e-mail" name="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Parola:</label>
+                <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6">
+                    <input type="password" class="form-control" id="in7" placeholder="Scrie parola" name="pwd">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Retine parola</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <button class="btn btn-default" id="b1">Salveaza datele</button>
+        <button class="btn btn-default" id="b22">Renunta</button>
+    </div>
+
+    <div class="footer text-center " style="margin:20px; width:auto; height:150px ">
+        <footer class="text-center text-white footer">
+            <br>
+            <div class="rounded-social-buttons ">
+                <a class="social-button facebook " href="https://www.facebook.com/ " target="_blank "><i class="fab fa-facebook-f "></i></a>
+                <a class="social-button twitter " href="https://www.twitter.com/ " target="_blank "><i class="fab fa-twitter "></i></a>
+                <a class="social-button linkedin " href="https://www.linkedin.com/ " target="_blank "><i class="fab fa-linkedin "></i></a>
+                <a class="social-button youtube " href="https://www.youtube.com/ " target="_blank "><i class="fab fa-youtube "></i></a>
+                <a class="social-button instagram " href="https://www.instagram.com/ " target="_blank "><i class="fab fa-instagram "></i></a>
+            </div>
+            <br>
+            <div class="row ">
+                <div class="col "></div>
+                <div class="col ">
+                    <a class="text-white " href="cookie.html ">Politica de cookie</a>
+                </div>
+                <div class="col ">
+                    <a class="text-white " href="protectieDP.html ">Protectia datelor personale</a>
+                </div>
+                <div class="col ">
+                    <a class="text-white " href="termConditii.html ">Termeni si conditii</a>
+                </div>
+                <div class="col "></div>
+            </div>
+            <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+                © 2022 Copyright:
+                <a class="text-white " href="albinalucratoare.ro " target=" _blank ">AlbinaLucratoare.ro</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

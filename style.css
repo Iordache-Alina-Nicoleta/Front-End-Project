@@ -1,0 +1,393 @@
+/*Definire variabile SASS*/
+/* Stilizare generale */
+body {
+  background: url(https://i2.wp.com/files.123freevectors.com/wp-content/original/157857-abstract-white-and-gold-background.jpg?w=420);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Stilizare butoane din header*/
+.signup,
+.signin,
+.utilizator {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 130px;
+  font-size: 18px;
+  color: #053863;
+  border-radius: 10px;
+}
+
+.signin:hover,
+.signup:hover,
+.cos:hover,
+.cauta:hover,
+.utilizator:hover {
+  background-color: #ecf0e6;
+}
+
+.search .form-control {
+  padding-left: 3.5rem;
+  width: 450px;
+  height: 45px;
+}
+
+.search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  pointer-events: none;
+  color: #5eaa7b;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Stilizare bara de navigare */
+.navbar {
+  background: #5daa7a;
+}
+
+.dropbtn,
+.noi,
+.contact,
+.blog,
+.acasa {
+  background-color: transparent;
+  color: white;
+  padding: 9px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.dropbtn:hover,
+.noi:hover,
+.contact:hover,
+.blog:hover,
+.acasa:hover,
+.dropbtn:focus,
+.noi:focus,
+.contact:focus,
+.blog:focus,
+.acasa:focus {
+  background-color: #5eaa7b;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5eaa7b;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 300px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #6eb98b;
+}
+
+.show {
+  display: block;
+}
+
+li {
+  padding-left: 10px;
+}
+
+li::before {
+  padding-right: 8px;
+}
+
+/* Stilizare butoane retele de socializare- footer*/
+.rounded-social-buttons .fa-twitter,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* stilizare pagina blog.html*/
+.articol1,
+.articol2,
+.articol3,
+.articol4,
+.articol5,
+.articol6,
+.articol7,
+.articol8,
+.articol9 {
+  position: relative;
+  width: 350px;
+  height: 250px;
+}
+
+.imagine1,
+.imagine2,
+.imagine3,
+.imagine4,
+.imagine5,
+.imagine6,
+.imagine7,
+.imagine8,
+.imagine9 {
+  display: block;
+}
+
+.overlay1,
+.overlay2,
+.overlay3,
+.overlay4,
+.overlay5,
+.overlay6,
+.overlay7,
+.overlay8,
+.overlay9 {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.articol1:hover .overlay1,
+.articol2:hover .overlay2,
+.articol3:hover .overlay3,
+.articol4:hover .overlay4,
+.articol5:hover .overlay5,
+.articol6:hover .overlay6,
+.articol7:hover .overlay7,
+.articol8:hover .overlay8,
+.articol9:hover .overlay9 {
+  opacity: 1;
+}
+
+/*Stilizare butoane Intra in cont, Creaza cont, Abonare si Trimite*/
+.intraInCont,
+.creaza,
+.trimite,
+.abonare {
+  background: #55b178;
+}
+
+.albinutagif {
+  width: 250px;
+  height: 250;
+}
+
+/*Stilizare iframe*/
+.iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.fagure {
+  background-image: url(https://m.media-amazon.com/images/I/71CeL8UZNHL._AC_SL1200_.jpg);
+  width: auto;
+  background-size: cover;
+  height: 230px;
+}
+
+.desprenoi {
+  width: 600px;
+  height: 350px;
+}
+
+.inapoi {
+  background: #55b178;
+  width: 80px;
+  height: auto;
+}
+
+/* blog*/
+.produse {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background: #55b178;
+}
+
+.albinaimg {
+  width: 350px;
+  height: 350px;
+}
+
+#b1 {
+  background: #55b178;
+  color: white;
+}
+
+/*Stilizare imagine fade*/
+.fade-in-image {
+  animation: fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out-image {
+  animation: fadeOut 10s;
+  -webkit-animation: fadeOut 10s;
+  -moz-animation: fadeOut 10s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  500% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Buton renunta-utilizator.html */
+#b22 {
+  color: white;
+  background-color: #55b178;
+}
+
+/* efect umbra imagini din "index" si "miere" */
+.desprealbine,
+.retetemiere,
+.beneficiimiere {
+  -webkit-box-shadow: 5px 5px 5px 5px #777777;
+          box-shadow: 5px 5px 5px 5px #777777;
+}
+
+#img1 {
+  -webkit-box-shadow: 5px 5px 5px 5px #dce4ca;
+          box-shadow: 5px 5px 5px 5px #dce4ca;
+}
+
+.mierepoliflora,
+.mierefaneata,
+.mierementa,
+.miererapita,
+.mieresalcam,
+.mieretei {
+  -webkit-box-shadow: 7px 7px 7px 7px #7a8560;
+          box-shadow: 7px 7px 7px 7px #7a8560;
+}
+
+.transport {
+  background: #5daa7a;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #4b9266;
+}
+/*# sourceMappingURL=style.css.map */

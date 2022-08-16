@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <style>
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 80%;
+            margin: auto;
+            height: 420px;
+        }
+        
+        .rounded-social-buttons .social-button {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            width: 4.5rem;
+            height: 4.5rem;
+            border: 0.125rem solid transparent;
+            padding: 0;
+            text-decoration: none;
+            text-align: center;
+            color: #fefefe;
+            font-size: 1.5625rem;
+            font-weight: normal;
+            line-height: 3em;
+            border-radius: 1.6875rem;
+            transition: all 0.5s ease;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .search .form-control {
+            padding-left: 5rem;
+            width: 600px;
+            height: 45px;
+            background: url(https://www.pngkey.com/png/full/898-8985858_search-green-search-icon-transparent-background.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-color: white;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <h6 class="text-dark" style="margin-left: 50px; font-size: 15px;">Contact :
+                    <a href="tel:0765896655" class="text text-dark text-align=left">0765896655 /</a>
+                    <a href="https://mail.google.com/" class="text text-dark" target="_blank">ali.iordache@gmail.com</a>
+                </h6>
+            </div>
+            <div class="col-6">
+                <h5 class="text-center" style="font-style: oblique; font-size: 20px;">Transport gratuit pentru comenzi peste 150 ron!</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header" style="margin:20px; width:auto; height:80px ">
+        <div class="row">
+            <div class="col-3 ">
+                <a href="index.html"><img src="https://albinalucratoare.ro/wp-content/uploads/logo-shop-albina-lucratoare.png" width="270" height="60"></a>
+            </div>
+            <div class="col-5 ">
+                <div class="form-group search">
+                    <input type="text" class="form-control" placeholder="Cauta...">
+                </div>
+            </div>
+            <div class="col ">
+                <a href="signup.html">
+                    <button class="signup" type="signup ">Cont nou</button>
+                </a>
+                <a href="signin.html ">
+                    <button class="signin" type="signin ">Intra in cont</button>
+                </a>
+                <a href="utilizator.html ">
+                    <button class="utilizator" type="signin ">Utilizator</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BARA DE NAVIGARE-->
+    <div class="navbar navbar-expand-lg text-light">
+        <div class="row" style="height: 50px; border-radius: 5px;">
+            <ul class="nav">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="active"><button class="acasa"><a href="index.html" class="home text-light" value="Home" style="font-size: 20px;" />Acasa</a></button>
+                </li>
+                <li>
+                    <div class="dropdown text-light">
+                        <button onclick="myFunction()" class="dropbtn text-light" style="font-size: 20px;">Produse apicole</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="propolis.html" style="font-size: 17px;">Propolis</a>
+                            <a href="polen.html" style="font-size: 17px;">Polen</a>
+                            <a href="miere.html" style="font-size: 17px;">Miere romaneasca</a>
+                            <a href="laptisor.html" style="font-size: 17px;">Laptisor de matca</a>
+                        </div>
+                    </div>
+                </li>
+                <li><button class="noi"><a href="noi.html" class="desprenoi text-light" value="despre" style="font-size: 20px;"/>Despre noi</a></button>
+                </li>
+                <li><button class="contact"><a href="contact.html" class="contact1 text-light" value="contact" style="font-size: 20px;"/>Contact</a></button>
+                </li>
+                <li><button class="blog"><a href="blog.html " class="blog1 text-light" value="blog" style="font-size: 20px;" />Blog</a></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicatori -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Imagini -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="slide1" src="https://images.livemint.com/img/2020/12/07/689x388/iStock-1093966734_Web_1607336088089_1607336105455.jpg" alt="Miere ">
+                </div>
+                <div class="item ">
+                    <img class="slide2" src="https://www.ucdavis.edu/sites/default/files/styles/sf_landscape_16x9/public/images/article/160726_sunflower_rows.jpg.jpeg?h=57024e64&itok=10LCywhW" alt="floare ">
+
+                </div>
+                <div class="item ">
+                    <img class="slide3" src="https://www.calatoriilasingular.ro/wp-content/uploads/2019/05/12-Lanuri-Lavanda-Romania-Calatorii-la-Singular-Foto-Original-Copyright-Mira-Kaliani.jpg " alt="Lavanda ">
+                </div>
+                <div class="item ">
+                    <img class="slide4 " src="https://t-smart.eu/wp-content/uploads/2016/03/foto-curso-apicultura.jpg " alt="Apicultor ">
+                </div>
+            </div>
+
+            <!-- Butoane de rulare stanga-dreapta -->
+            <a class="left carousel-control " href="#myCarousel " role="button " data-slide="prev ">
+                <span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span>
+                <span class="sr-only ">Previous</span>
+            </a>
+            <a class="right carousel-control " href="#myCarousel " role="button " data-slide="next ">
+                <span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
+                <span class="sr-only ">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="container ">
+        <div class="row " style="color: #05386b; ">
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol1 ">
+                    <a href="zaharisire.html "><img class="imagine1 " src="https://i0.wp.com/syl.ru/misc/i/ai/351246/2078447.jpg " width="350 " height="250 "></a><br>
+                    <div class="overlay1 ">De ce se zahariseste mierea?</div>
+                </div>
+                <p class="zaharisire text-justify " style="font-size: 15px;">Zaharisirea e un fenomen normal la miere. In functie de planta de pe care a fost cules nectarul, mierea se va zaharisi mai devreme sau mai tarziu. Cristalizarea sau zaharisirea...
+                    <a class="zaharisire " style="color: #379683; " href="zaharisire.html ">[citeste mai mult]</a></p>
+            </div>
+
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol2 ">
+                    <a href="aerstup.html "><img class="imagine2 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg6AXt8jyyjgAwNgOi0k5KmckpvTXKZCxUnUDtD9Zp_rXEYBDg1UVlCIdp9Jx7qkfa0Hw&usqp=CAU " width="350 " height="250 "></a><br>
+                    <div class="overlay2 ">Aerul de stup</div>
+                </div>
+                <p class="aer text-justify " style="font-size: 15px;">In ultimele zile, problema majora a mamicilor este ce sa-i dau copilului sa nu mai tuseasca, sa nu ii mai curga nasul, iar primul raspuns pe care il aud este ”Fa-i aerosoli”, ...<a class="aer " style="color:
+                            #379683; " href="aerstup.html ">[citeste mai mult]</a></p>
+            </div>
+
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol3 ">
+                    <a href="contrafacuta.html "><img class="imagine3 " src="https://www.mierepenet.ro/poze-articole/2/0.jpg " width="350 " height="250 "></a><br>
+                    <div class="overlay3 ">Cum recunoastem mierea contrafacuta?</div>
+                </div>
+                <p class="contrafacuta text-justify " style="font-size: 15px;">Din pacate, majoritatea cumparatorilor nu isi dau seama de "artificiile " folosite pentru falsificarea mierii si ajung sa consume produse contrafacute si la preturi mult prea mari ...
+                    <a class="contrafacuta " style="color: #379683 " href="contrafacuta.html ">[citeste mai mult]</a></p>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+        <div class="row " style="color: #05386b; ">
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol4 ">
+                    <a href="intepatura.html "><img class="imagine4 " src="https://www.mierepenet.ro/poze-articole/11/0.jpg " width="350 " height="250 "></a><br>
+                    <div class="overlay4 ">De ce inteapa albinele?</div>
+                </div>
+                <p class="intepatura text-justify " style="font-size: 15px;">Albinele inteapa mai ales pe cei care le deranjeaza cuibul sau cand se simt amenintate. Aceasta inteapa foarte rar atunci cand nu sunt in preajma stupului. Intepatura...
+                    <a class="intepatura " style="color: #379683 " href="intepatura.html ">[citeste mai mult]</a>
+            </div>
+
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol5 ">
+                    <a href="manuka.html "><img class="imagine5 " src="https://sideris.ro/blog/wp-content/uploads/2010/07/tea-tree.png " width="350 " height="250 "></a><br>
+                    <div class="overlay5 ">Mierea de Manuka</div>
+                </div>
+                <p class="manuka text-justify " style="font-size: 15px;">Mierea de Manuka provine din nectarul florilor arbustului de Manuka (Leptospermum scoparium), originar din Noua Zeelanda. Mierea de manuka s-a facut remarcata...
+                    <a class="manuka " style="color: #379683 " href="manuka.html ">[citeste mai mult]</a></p>
+            </div>
+
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol6 ">
+                    <a href="toxic.html "><img class="imagine6 " src="https://bunatatilealbinutei.ro/wp-content/uploads/2021/02/miereefectesec-1000x600-1.png " width="350 " height="250 "></a><br>
+                    <div class="overlay6 ">Devine mierea toxica la temperaturi inalte?</div>
+                </div>
+                <p class="toxic text-justify " style="font-size: 15px;">Din ce in ce mai multe persoane cred cu tarie faptul ca mierea tratata termic devine toxica. Aceasta informatie a fost proliferata de asemenea pe foarte multe site-uri, insa,...
+                    <a class="toxic " style="color: #379683 " href="toxic.html ">[citeste mai mult]</a></p>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+        <div class="row " style="color: #05386b; ">
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol7 ">
+                    <a href="tratament.html "><img class="imagine7 " src="https://static.eva.ro/img/auto_resized/db/article/128/481/610085l-1360x0-w-2a878270/--a06d8011/beneficii-usturoi-cu-miere.jpg " width="350 " height="250 "></a><br>
+                    <div class="overlay7 ">Tratament pentru raceala si gripa</div>
+                </div>
+                <p class="tratament text-justify " style="font-size: 15px;">Odata cu sezonul rece apar si diferitele tipuri de gripa ce ameninta sanatatea organismului nostru. Nas infundat, febra, dureri in gat, tuse - acestea sunt doar cateva din...
+                    <a class="tratament " style="color: #379683 " href="tratament.html ">[citeste mai mult]</a></p>
+            </div>
+
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol8 ">
+                    <a href="catina.html "><img class="imagine8 " src="https://stupulvesel.ro/app/uploads/2021/01/catina-cu-miere-300x192.jpg " width="350 " height="250 "></a><br>
+                    <div class="overlay8 ">Catina cu miere</div>
+                </div>
+                <p class="catina text-justify " style="font-size: 15px;">Catina este un arbore fructifer ale carui fructe contin cea mai mare cantitate de vitamina C, aproape de 10 ori mai multa decat se gaseste in citrice. Pe langa aceasta...
+                    <a class="catina " style="color: #379683 " href="catina.html ">[citeste mai mult]</a></p>
+            </div>
+
+            <div class="col-4 " style="border: 1px solid#c2c522; background-image: url(https://www.abarbistro.co.uk/wp-content/uploads/2019/03/beige-background.png); ">
+                <div class="articol9 ">
+                    <a href="masca.html "><img class="imagine9 " src="https://stupulvesel.ro/app/uploads/2021/01/masca-par-miere-300x200.jpg " width="350 " height="250 "></a><br>
+                    <div class="overlay9 ">Masca cu miere pentru un par sanatos</div>
+                </div>
+                <p class="masca text-justify " style="font-size: 15px;">Daca ai parul uscat sau deteriorat, mierea este produsul ideal pentru parul si pielea capului tau. Ea contine umectanti naturali care mentin parul hidratat, sanatos si matasos...
+                    <a class="masca " style="color: #379683 " href="masca.html ">[citeste mai mult]</a></p>
+            </div>
+        </div><br><br>
+    </div>
+    <div class="container ">
+        <div class="row text-center " style="color: #05386b;">
+            <h5 style="font-size: 20px;">Comanda acum miere 100% naturala</h5>
+        </div>
+        <div class="row text-justify " style="color: #05386b; ">
+            <a href="miere.html "><button class="btn produse text-light " style="font-size: 15px;"><b>Vezi produse</b></button></a>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="footer text-center " style="margin:20px; margin-bottom: none; ">
+        <footer class="text-center text-white footer">
+            <br>
+            <div class="rounded-social-buttons " style="height: 70px;">
+                <a class="social-button facebook " href="https://www.facebook.com/ " target="_blank "><i class="fab fa-facebook-f "></i></a>
+                <a class="social-button twitter " href="https://www.twitter.com/ " target="_blank "><i class="fab fa-twitter "></i></a>
+                <a class="social-button linkedin " href="https://www.linkedin.com/ " target="_blank "><i class="fab fa-linkedin "></i></a>
+                <a class="social-button youtube " href="https://www.youtube.com/ " target="_blank "><i class="fab fa-youtube "></i></a>
+                <a class="social-button instagram " href="https://www.instagram.com/ " target="_blank "><i class="fab fa-instagram "></i></a>
+            </div>
+            <br>
+            <div class="row ">
+                <div class="col "></div>
+                <div class="col ">
+                    <a class="text-white " href="cookie.html " style="font-size: 17px;">Politica de cookie</a>
+                </div>
+                <div class="col ">
+                    <a class="text-white " href="protectieDP.html " style="font-size: 17px;">Protectia datelor personale</a>
+                </div>
+                <div class="col ">
+                    <a class="text-white " href="termConditii.html " style="font-size: 17px;">Termeni si conditii</a>
+                </div>
+                <div class="col "></div>
+            </div>
+            <div class="text-center p-4 " style="background-color: rgba(0, 0, 0, 0.2); font-size: 15px;">
+                © 2022 Copyright:
+                <a class="text-white " href="https://albinalucratoare.ro/ " target=" _blank " style="font-size: 15px;">AlbinaLucratoare.ro</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js ">
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("input").focus(function() {
+                $(this).css("background", "#f1f1f1");
+            });
+        })
+    </script>
+</body>
+
+</html>
